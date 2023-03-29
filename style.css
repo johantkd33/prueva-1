@@ -1,5 +1,4 @@
 body{
-    background-color: rgb(42, 59, 75);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -112,4 +111,43 @@ input, button{
     list-style-type: none;
     margin: 0;
     line-height: 1.5;
+}
+
+/* Estilos para modo diurno */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+/* Estilos para modo nocturno */
+body.dark-mode {
+    background-color: #333;
+    color: #333;
+}
+.dark-mode #dark-mode-button {
+    background-color: blueviolet;
+    color: #333;
+}
+.dark-mode #dark-mode-button:hover {
+    background-color: blue;
+}
+
+@media(max-width: 750px){
+    .wrapper{
+        width: 400px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .input-container{
+        padding: 10px;
+    }
+    
+}
+@media(max-width: 500px){
+    .wrapper{
+        width: 300px;
+    }
+    h1{
+        font-size: 30px;
+    }
 }
